@@ -3,6 +3,7 @@ import YTSearch from 'youtube-api-search';
 
 import { API_KEY } from '../constants/business.constants';
 import SearchBar from './search_bar';
+import VideoList from './video_list';
 
 
 export default class App extends Component {
@@ -18,6 +19,7 @@ export default class App extends Component {
         return (
           <div>
             <SearchBar />
+            <VideoList videos={this.state.videos} />
           </div>
         );
     }
